@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Abhi - Developer Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: rgb(0, 0, 33);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+            nav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(18, 18, 62);
+             }
+             nav ul{
+                display: flex;
+                justify-content: center;
+             }
+             nav ul li{
+                list-style: none;
+                margin: 0 23px;
+             }
+             nav ul li a{
+                text-decoration: none;
+                color: white;
+             }
+             nav ul li a:hover{
+                color: rgb(153, 153, 226);
+                font-size: 1.01rem;
+             }
+             .firstSection{
+                display: flex;
+                justify-content: space-between;
+                padding: 30px;
+                margin: 20px;
+             }
+             .firstSection > div{
+                width: 20%;
+             }
+             .leftSection{
+                margin: 50px auto 0;
+                font-size: 20px;
+             }
+             .rightSection{
+                margin: 50px auto 0;
+             }
+             .buttons{
+                padding: 25px 0;
+             }
+             .btn{
+                padding: 12px;
+                background: #1e2167;
+                color: white;
+                border: 2px solid white;
+                border-radius: 6px;
+                font-size: 20px;
+                cursor: pointer;
+             }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="left">Abhi's Portfolio</div>
+                <div class="rignt">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact_me.html">Contact Me</a></li>
+                        <li><a href="about.html">About</a></li>
+                </div>
+            </nav>
+        </header>
+        <main><center><h1> Click on the icons to view the projects </h1></center>
+            <section class="firstSection">
+               
+                <div class="leftSection">           
+            
+                       <a href="https://abhishekdj486-stock-price-prediction-app-nncxr0.streamlit.app/"> <img src="img/stock_price_prediction.png" width="250px" height="250px" padding="1000px" > </a><br/>
+                       <b>Stock Price Prediction Using Machine Learning</b>
+                       <div class="buttons"><br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn" onclick="window.location.href='https://drive.google.com/file/d/1BN7Dxh4aXgLnnGCbJXGIQfwSGy0F8ySY/view?usp=sharing'">Documentation</button>
+                       </div>
+                
+                </div>
+                <div class="rightSection">
+                    <a href="http://www.ciemarksentry.byethost14.com/login.php"> <img src="img/developer.png" width="250px" height="250px"> </a><br/>
+                    <b><h3>Contineus Internal Evaluation (CIE) Marks Entry</h3></b>
+                    <div class="buttons">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn" onclick="window.location.href='https://drive.google.com/file/d/1lCtzjvr1iO8va4NBt0IBRtYIXJ6-Pji6/view?usp=sharing'">Documentation</button>
+                       </div>
+                
+                </div>
+                </div>
+                        
+                    
+                </section>
+            </main>
+        </body>
+</html>
+
