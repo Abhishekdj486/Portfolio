@@ -1,248 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <title>Abhi - Developer Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-            }
-body{
-    background-color: rgb(0, 0, 33);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
- nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    background-color: rgb(18, 18, 62);
- }
- nav ul{
-    display: flex;
-    justify-content: center;
- }
- nav ul li{
-    list-style: none;
-    margin: 0 23px;
- }
- nav ul li a{
-    text-decoration: none;
-    color: white;
- }
- nav ul li a:hover{
-    color: rgb(153, 153, 226);
-    font-size: 1.01rem;
- }
- main hr{
-    border: 0;
-    background: #9c97f1;
-    height: 1.2px;
-    margin: 60px 84px;
- }
- .left{
-    font-size: 1.5rem;
- }
- .firstSection{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 130px 0;
- }
- .firstSection > div{
-    width: 30%;
- }
- .leftSection{
-    font-size: 3rem;
- }
- .leftSection .buttons{
-    padding: 50px 0;
- }
- .leftSection .btn{
-    padding: 12px;
-    background: #1e2167;
-    color: white;
-    border: 2px solid white;
-    border-radius: 6px;
-    font-size: 20px;
-    cursor: pointer;
- }
- .rightSection img{
-    width: 90%;
-    margin: 50px 0;
- }
- .purple{
-    color: rgb(170, 107, 228);
- }
- .text-gray{
-    color: gray;
- }
- #element{
-    color: rgb(170, 107, 228);
- }
- .secondSection{
-    max-width: 80vw;
-    margin: auto;
-    height: 80vh;
- }
- .secondSection h1{
-    font-size: 1.9rem;
- }
- .secondSection .box{
-    background: white;
-    width: 70vw;
-    height: 2px;
-    margin: 54px 0;
-    display: flex;
- }
- .secondSection .vertical{
-    height: 93px;
-    width: 1px;
-    background-color: white;
-    margin: 0 180px;
- }
- .image-top{
-    width: 23px;
-    position: relative;
-    top: -32px;
-    left: -9px;
- }
- .vertical-title{
-    position: relative;
-    top: 75px;
-    width: 150px;
- }
- .vertical-desc{
-    position: relative;
-    top: 86px;
-    color: #9c97f1;
-    width: 150px;
-    font-size: 15px;
- }
- footer{
-    background-color: #0e0e1a;
- }
- .footer{
-    display: flex;
-    padding: 23px 122px;
-    justify-content: space-evenly;
- }
- .footer ul{
-    list-style: none;
- }
- 
 
- footer .footer-rights{
-    text-align: center;
-    color: gray;
-    padding: 12px 0;
- }
- .footer ul li a{
-    text-decoration: none;
- }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="left">Abhi's Portfolio</div>
-                <div class="rignt">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact_me.html">Contact Me</a></li>
-                        <li><a href="about.html">About</a></li>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="firstSection">
-                <div class="leftSection">
-                    Hi, My name is <span class="purple">Abhishek</span>
-                    <div> and I am a passionate</div>
-                    <span id="element"></span>
-                    <div class="buttons">
-                        <button class="btn" onclick="window.location.href='https://drive.google.com/file/d/1f3x_NR_aPf7nOPHf0LgWef0NSFN315Ch/view?usp=sharing'">Download Resume</button>
-                        <button class="btn" onclick="window.location.href='https://github.com/Abhishekdj486'">Visit Github</button>
-                    </div>
-                </div>
-                <div class="rightSection">
-                    <img src="img/bg.png">
-                </div>
-            </section>
-<hr>
-            <section class="secondSection">
-                <span class="text-gray">What I have done so far</span>
-                <h1>Projects Developed During MCA</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Abhi - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: ;
+            color: #333;
+        }
+        
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        nav ul li a:hover {
+            color: #ccc;
+        }
+        
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        
+        .left {
+            font-size: 1.5rem;
+        }
+        
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+        
+        .firstSection > div {
+            width: 30%;
+        }
+        
+        .leftSection {
+            font-size: 3rem;
+        }
+        
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+        
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .rightSection img {
+            width: 90%;
+            margin: 50px 0;
+        }
+        
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+        
+        .text-gray {
+            color: gray;
+        }
+        
+        #element {
+            color: rgb(170, 107, 228);
+        }
+        
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+        
+        .secondSection .box {
+            background: black;
+            width: 70vw;
+            height: 2px;
+            margin: 54px 0;
+            display: flex;
+        }
+        
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: black;
+            margin: 0 180px;
+        }
+        
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+        
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: #9c97f1;
+            width: 150px;
+            font-size: 15px;
+        }
+        
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        
+        .footer ul {
+            list-style: none;
+        }
+        
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        
+        .footer ul li a {
+            text-decoration: none;
+        }
+        
+        
+    </style>
+</head>
 
-                <div class="box">
-                    <div class="vertical">
-                        <img class="image-top" src="img/fake.jpg" alt="">
-                        <div class="vertical-title">
-                            MCA I sem 
-                        </div>
-                        <div class="vertical-desc">
-                            FAKE LOGO DETECTION using VB.NET
-                        </div>
-                    </div>
-                    <div class="vertical">
-                        <img class="image-top" src="img/developer.png" alt="">
-                        <div class="vertical-title">
-                            MCA II sem
-                        </div>
-                        <div class="vertical-desc">
-                            Continuous Internal Evaluation (CIE) Marks Entry
-                        </div>
-                    </div>
-                    <div class="vertical">
-                        <img class="image-top" src="img/stock.png" alt="">
-                        <div class="vertical-title">
-                            MCA III sem
-                        </div>
-                        <div class="vertical-desc">
-                            Stock Price Prediction Using Machine Learning
-                        </div>
-                    </div>
-                    
-
-            </section>
-        </main>
-        <footer>
-            <div class="footer">
-                <div class="footer-first">
-                    <h3>Abhi's Developer Portfolio</h3>
+<body>
+    <header>
+        <div class="header-title">Abhi's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi, My name is <span class="purple">Abhishek</span>
+            <div> and I am a passionate</div>
+            <span id="element"></span>
+            <div class="buttons">
+                <button class="btn" onclick="window.location.href='https://drive.google.com/file/d/1f3x_NR_aPf7nOPHf0LgWef0NSFN315Ch/view?usp=sharing'">Download Resume</button>
+                <button class="btn" onclick="window.location.href='https://github.com/Abhishekdj486'">Visit Github</button>
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="img/bg.png">
+        </div>
+    </section>
+    <hr>
+    <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Projects Developed During MCA</h1>
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="img/fake.jpg" alt="">
+                <div class="vertical-title">
+                    MCA I sem
                 </div>
-                <div class="footer-second">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact_me.html">Contact Me</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-third">
-
-                </div>
-                <div class="footer-fourth">
-
+                <div class="vertical-desc">
+                    FAKE LOGO DETECTION using VB.NET
                 </div>
             </div>
-            <div class="footer-rights">
-                www.abhisportfolio.com | All rights reseverd
+            <div class="vertical">
+                <img class="image-top" src="img/developer.png" alt="">
+                <div class="vertical-title">
+                    MCA II sem
+                </div>
+                <div class="vertical-desc">
+                    Contineus Internal Evaluation (CIE) Marks Entry
+                </div>
             </div>
-        </footer>
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed('#element', {
-              strings: ['Web Developer', 'Web Designer'],
-              typeSpeed: 50,
-            });
-          </script>
-    </body>
+            <div class="vertical">
+                <img class="image-top" src="img/stock.png" alt="">
+                <div class="vertical-title">
+                    MCA III sem
+                </div>
+                <div class="vertical-desc">
+                    Stock Price Prediction Using Machine Learning
+                </div>
+            </div>
+        </div>
+    </section>
+</main><hr>
+<footer>
+    <div class="footer">
+        <div class="footer-first">
+            <h3>Abhi's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+    </div>
+    <div class="footer-rights">
+        www.abhisportfolio.com | All rights reserved
+    </div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Web Designer'],
+        typeSpeed: 50,
+    });
+</script>
+</body>
 </html>
