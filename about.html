@@ -1,54 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abhi - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-      .container {
-         max-width: 800px;
-         padding: 20px;
-         border: 1px solid #ccc;
-         background-color: #fff;
-         text-align: center;
-         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-     }
-     legend {
-         font-size: 18px;
-         font-weight: bold;
-     }
-     
-     p {
-         line-height: 1.6;
-     }
-     
-     a {
-         color: #007bff;
-     }
+        .container-fluid{
+            background-color: rgb(36, 162, 162);
+            padding: 10px;
+            position: relative;
+            margin-top: -8px;
+        }
+        .nav-item{
+          padding-left: 50px;
+        }
+        .navbar-light .navbar-nav .nav-link {
+        color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            /*border: 1px solid #ddd;*/
+            padding: 8px;
+            text-align: center;
+        }
+        #tb{
+            width: 50%;
+            height: 500px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        p {
+            line-height: 1.6;
+        }
+        
+        a {
+            color: #007bff;
+        }
     </style>
 </head>
-
 <body>
-    <header>
-        <div class="header-title">Abhi's Portfolio</div>
-        <nav>
+    <table>
+        <tr>
+            <th colspan="2">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light bg-cyan-300">
+                <div class="container-fluid">
+                <a href="https://abhishekdj486.github.io/Portfolio/"><img src="img/logo.png" width="40px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </th>
+        </tr>
+    </table>
+    <footer class="footer bg-light text-rgb(36, 162, 162)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>About :</h5>
+            <p>This is a Portfolio Website that describes the projects conducted by Abishek Datta Jagtap during the academic year 2022-2023 while pursuing an MCA degree in <a href="https://www.google.com/maps?q=17.328958, 76.824853" target="_blank"><i><u>Sharnbasva University, Kalaburagi</u></i></a>.</p>
+          </div>
+          <div class="col-md-6">
+            <h5>Contact Information</h5>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact_me.html">Contact Me</a></li>
-                <li><a href="about.html">About</a></li>
+              <li>Email: abhishekjagtap486@gmail.com</li></a>
+              <li>Phone: +916364557716</li>
+              <li>Address: Janaki Nivas, Opposite Hanuman Temple, Ganesh Nagar, Old Jewargi Road ,Kalaburagi, 585102</li>
             </ul>
-        </nav>
-    </header><br><br><br><br><br><br><br><br><br><br><center>
-    <div class="container">
-        <legend>About the Developer</legend>
-        <p>This is a Portfolio Website that describes the projects conducted by <i><u>Abishek Datta Jagtap</u></i> during the academic year 2022-2023 while pursuing an MCA degree in <a href="https://www.google.com/maps?q=17.328958, 76.824853" target="_blank"><i><u>Sharnbasva University, Kalaburagi</u></i></a>.</p>
-    </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2024 Abhi's Portfolio Website. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
-
 </html>
