@@ -1,125 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abhi - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .container-fluid{
+            background-color: rgb(36, 162, 162);
+            padding: 10px;
+            position: relative;
+            margin-top: -8px;
+        }
+        .nav-item{
+          padding-left: 50px;
+        }
+        .navbar-light .navbar-nav .nav-link {
+        color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 10px 0;
+        th, td {
+            /*border: 1px solid #ddd;*/
+            padding: 8px;
             text-align: center;
         }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
+        #tb{
+            width: 50%;
+            height: 500px;
         }
-
-        nav ul li {
-            display: inline-block;
-            margin: 0 20px;
+        ul{
+            list-style-type: none;
         }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 20px;
-        }
-
-        nav ul li a:hover {
-            color: #ccc;
-        }
-
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-
-        .project-container {
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            margin: 20px;
-            padding: 20px;
-            max-width: 300px;
-            background-color: #fff;
-            transition: transform 0.2s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-container:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        .project-container h3 {
-            margin: 10px 0;
-            font-size: 1.5em;
-        }
-
-        .documentation-btn {
-            display: block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-
-        .documentation-btn:hover {
-            background-color: #333;
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 20px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <div class="header-title">Abhi's Portfolio</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact_me.html">Contact Me</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <table>
+        <tr>
+            <th colspan="4">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light bg-cyan-300">
+                <div class="container-fluid">
+                <a href="https://abhishekdj486.github.io/Portfolio/"><img src="img/logo.png" width="40px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </th>
+        </tr>
+      </table>
+      <main>
         <div class="project-container">
             <a href="https://abhishekdj486-stock-price-prediction-app-nncxr0.streamlit.app/">
                 <img src="img/stock_price_prediction.png" alt="Stock Price Prediction">
             </a>
             <h3>Stock Price Prediction</h3>
-            <a class="documentation-btn" href="https://drive.google.com/file/d/1BN7Dxh4aXgLnnGCbJXGIQfwSGy0F8ySY/view?usp=sharing">Documentation</a>
+            <a class="documentation-btn" onclick="window.location.href='docs/Stock Price Prediction documentation(FINALLL).pdf'">Documentation</a>
         </div>
 
         <div class="project-container">
@@ -127,7 +88,7 @@
                 <img src="img/currency.png" alt="Fake Currency Detection">
             </a>
             <h3>Fake Currency Detection</h3>
-            <a class="documentation-btn" href="https://drive.google.com/file/d/1nuc5YP4t2iala_yToxBRBC2j6pIiCgVL/view?usp=sharing">Documentation</a>
+            <a class="documentation-btn" onclick="window.location.href='docs/Fake Documentation.pdf'">Documentation</a>
         </div>
 
         <div class="project-container">
@@ -135,7 +96,7 @@
                 <img src="img/developer.png" alt="CIE Marks Entry">
             </a>
             <h3>Continous Internal Evaluation (CIE) Marks Entry</h3>
-            <a class="documentation-btn" href="https://drive.google.com/file/d/1lCtzjvr1iO8va4NBt0IBRtYIXJ6-Pji6/view?usp=sharing">Documentation</a>
+            <a class="documentation-btn" onclick="window.location.href='docs/CIE entry-1.pdf'">Documentation</a>
         </div>
 
         <div class="project-container">
@@ -143,7 +104,7 @@
                 <img src="img/stock.png" alt="Enhanced Stock Price Prediction">
             </a>
             <h3>Stock Price Prediction (Enhanced Version)</h3>
-            <a class="documentation-btn" href="https://drive.google.com/file/d/1b0c9QqdmeFSHS-uzfjeYU-Rsust06FYl/view?usp=drive_link">Documentation</a>
+            <a class="documentation-btn" onclick="window.location.href='docs/Stock Price Prediction Enhanced Version.pdf'">Documentation</a>
         </div>
         <div class="project-container">
             <a href="http://bcacoed.byethost13.com/">
@@ -153,6 +114,38 @@
             <!--<a class="documentation-btn" href="https://drive.google.com/file/d/1b0c9QqdmeFSHS-uzfjeYU-Rsust06FYl/view?usp=drive_link">Documentation</a>-->
         </div>
     </main>
+      <footer class="footer bg-light text-rgb(36, 162, 162)">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>About :</h5>
+              <p>This is a Portfolio Website that describes the projects conducted by Abishek Datta Jagtap during the academic year 2022-2023 while pursuing an MCA degree in Sharnbasva University, Kalaburagi.</p>
+            </div>
+            <div class="col-md-6">
+              <h5>Contact Information</h5>
+              <ul>
+                <li>Email: abhishekjagtap486@gmail.com</li></a>
+                <li>Phone: +916364557716</li>
+                <li>Address: Janaki Nivas, Opposite Hanuman Temple, Ganesh Nagar, Old Jewargi Road ,Kalaburagi, 585102</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>&copy; 2024 Abhi's Portfolio Website. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("fake-logo-doc").addEventListener("click", function(event) {
+              event.preventDefault();
+              alert("Sorry, the Document is not available.");
+            });
+          });
+        </script>
+        
 </body>
-
 </html>
