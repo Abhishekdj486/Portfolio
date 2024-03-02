@@ -1,270 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abhi - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .container-fluid{
+            background-color: rgb(36, 162, 162);
+            padding: 10px;
+            position: relative;
+            margin-top: -8px;
         }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: ;
-            color: #333;
+        .nav-item{
+            padding-left: 50px;
         }
-        
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 10px 0;
+        .navbar-light .navbar-nav .nav-link {
+        color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td{
             text-align: center;
         }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        
-        nav ul li {
-            display: inline-block;
-            margin: 0 20px;
-        }
-        
-        nav ul li a {
+        ul{
+            list-style-type: none;
             text-decoration: none;
-            color: #fff;
-            font-size: 20px;
         }
-        
-        nav ul li a:hover {
-            color: #ccc;
+        .container{
+            width: 100%;
         }
-        
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 60px 84px;
+        .footer{
+            background-color: rgb(36, 162, 162);
         }
-        
-        .left {
-            font-size: 1.5rem;
-        }
-        
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-        }
-        
-        .firstSection > div {
-            width: 30%;
-        }
-        
-        .leftSection {
-            font-size: 3rem;
-        }
-        
-        .leftSection .buttons {
-            padding: 50px 0;
-        }
-        
-        .leftSection .btn {
-            padding: 12px;
-            background: #1e2167;
+        #foo{
             color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: larger;
+            border-radius: 40px;
+            margin-top: 20px;
         }
-        
-        .rightSection img {
-            width: 90%;
-            margin: 50px 0;
+        .btn{
+            background-color: rgb(36, 162, 162);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            size: 20px;
         }
-        
-        .purple {
-            color: rgb(170, 107, 228);
+        .purple{
+            color: rgb(249, 69, 9);
+            font-weight:normal;
         }
-        
-        .text-gray {
-            color: gray;
+        #pro{
+          background-color: rgb(36, 162, 162);
+          color: white;
+          border-radius: 20px;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 30px;
         }
-        
-        #element {
-            color: rgb(170, 107, 228);
-        }
-        
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-        
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
-        
-        .secondSection .box {
-            background: black;
-            width: 70vw;
-            height: 2px;
-            margin: 54px 0;
+        .card {
+            border-radius: 35px;
+            width: 100%;
             display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
         }
-        
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: black;
-            margin: 0 180px;
-        }
-        
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
-        
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-        }
-        
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: #9c97f1;
-            width: 150px;
-            font-size: 15px;
-        }
-        
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-        
-        .footer ul {
-            list-style: none;
-        }
-        
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-        
-        .footer ul li a {
-            text-decoration: none;
-        }
-        
-        
-    </style>
-</head>
+        .card a,
+            tr:nth-child(5) a {
+                text-decoration: none;
+                color: rgb(36, 162, 162);
+            }
 
+        .card:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 20px rgba(0, 0, 0, 0.1);
+        }
+        nav{
+            border-radius: 20px;
+        }
+        .col{
+            text-align:center;
+        }
+        .footer {
+        padding: 50px 0;
+        background-color: #343a40;
+        color: rgb(36, 162, 162);
+        }
+
+        .footer h5 {
+        color: rgb(36, 162, 162);
+        }
+
+        .footer p {
+        color: rgb(36, 162, 162);
+        }
+
+        .footer ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        .footer ul li {
+        margin-bottom: 10px;
+        }
+
+        .footer hr {
+        border-top: 1px solid #555;
+        }
+
+        .footer a {
+        color: rgb(36, 162, 162);
+        text-decoration: none;
+        }
+    </style>
+    <!--<link href="css/style.css" stylesheet="css">-->
+</head>
 <body>
-    <header>
-        <div class="header-title">Abhi's Portfolio</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact_me.html">Contact Me</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-<main>
-    <section class="firstSection">
-        <div class="leftSection">
-            Hi, My name is <span class="purple">Abhishek</span>
-            <div> and I am a passionate</div>
-            <span id="element"></span>
-            <div class="buttons">
-                <button class="btn" onclick="window.location.href='https://drive.google.com/file/d/1f3x_NR_aPf7nOPHf0LgWef0NSFN315Ch/view?usp=sharing'">Download Resume</button>
+    <table>
+        <tr>
+            <th colspan="4">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light bg-cyan-300">
+                    <div class="container-fluid">
+                    <a href="https://abhishekdj486.github.io/Portfolio/"><img src="img/logo.png" width="40px"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="project.html">Projects</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="4" style="color:rgb(36, 162, 162); font-family:'Courier New', Courier, monospace; font-size: 50px;">Abhi's Portfolio</td>
+        </tr>
+        <tr>
+            <td colspan="2" id="tb" style="color:rgb(36, 162, 162); font-family:'Courier New', Courier, monospace; font-size: 45px;"><hr>Hi, welcome to my portfolio.<br>My self <span class="purple">Abhishek</span>
+                <div> and I am a passionate</div>
+                <span id="element"></span><br>
+                <button class="btn" onclick="window.location.href='docs/abhi.pdf'">View Resume</button>
                 <button class="btn" onclick="window.location.href='https://github.com/Abhishekdj486'">Visit Github</button>
+            </td>
+            <td colspan="2" id="tb"><img src="img/port.png" width="550px"></td>
+        </tr>
+            <tr><td colspan="4" id="pro">Projects Developed During MCA</td></a></tr><br>
+    </table>
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <a href="project.html" class="card-link">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-header">SEM I</h6>
+                <h5 class="card-title">Fake Logo Detection Using VB.NET</h5>
+                <p class="card-text">This is a card with some content.</p>
+              </div></a>
             </div>
-        </div>
-        <div class="rightSection">
-            <img src="img/bg.png">
-        </div>
-    </section>
-    <hr>
-    <section class="secondSection">
-        <span class="text-gray">What I have done so far</span>
-        <h1>Projects Developed During MCA</h1>
-        <div class="box">
-            <div class="vertical">
-                <img class="image-top" src="img/fake.jpg" alt="">
-                <div class="vertical-title">
-                    MCA I sem
-                </div>
-                <div class="vertical-desc">
-                    FAKE LOGO DETECTION using VB.NET
+          </div>
+          <div class="col">
+            <a href="project.html" class="card-link">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-header">SEM II</h6>
+                <h5 class="card-title">Contineus Internal Evaluation (CIE) Marks Entry</h5>
+                <p class="card-text">This is a card with some content.</p>
+              </div></a>
+            </div>
+            </div>
+            <div class="col">
+                <a href="project.html" class="card-link">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-header">SEM III</h6>
+                    <h5 class="card-title">Stock Price Prediction Using Machine Learning</h5>
+                    <p class="card-text">This is a card with some content.</p>
+                  </div></a>
                 </div>
             </div>
-            <div class="vertical">
-                <img class="image-top" src="img/developer.png" alt="">
-                <div class="vertical-title">
-                    MCA II sem
+            <div class="col">
+                <a href="project.html" class="card-link">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-header">SEM IV</h6>
+                    <h5 class="card-title">Fake Currency Detection Using Machine Learning</h5>
+                    <p class="card-text">This is a card with some content.</p>
+                  </div></a>
                 </div>
-                <div class="vertical-desc">
-                    Contineus Internal Evaluation (CIE) Marks Entry
-                </div>
+              </div>
+        </div>
+      </div>
+      <footer class="footer bg-light text-rgb(36, 162, 162)">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>About :</h5>
+              <p>This is a Portfolio Website that describes the projects conducted by Abishek Datta Jagtap during the academic year 2022-2023 while pursuing an MCA degree in Sharnbasva University, Kalaburagi.</p>
             </div>
-            <div class="vertical">
-                <img class="image-top" src="img/stock.png" alt="">
-                <div class="vertical-title">
-                    MCA III sem
-                </div>
-                <div class="vertical-desc">
-                    Stock Price Prediction Using Machine Learning
-                </div>
+            <div class="col-md-6">
+              <h5>Contact Information</h5>
+              <ul>
+                <li>Email: abhishekjagtap486@gmail.com</li></a>
+                <li>Phone: +916364557716</li>
+                <li>Address: Janaki Nivas, Opposite Hanuman Temple, Ganesh Nagar, Old Jewargi Road ,Kalaburagi, 585102</li>
+              </ul>
             </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>&copy; 2024 Abhi's Portfolio Website. All rights reserved.</p>
+            </div>
+          </div>
         </div>
-    </section>
-</main><hr>
-<footer>
-    <div class="footer">
-        <div class="footer-first">
-            <h3>Abhi's Developer Portfolio</h3>
-        </div>
-        <div class="footer-second">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact_me.html">Contact Me</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-        <div class="footer-third"></div>
-        <div class="footer-fourth"></div>
-    </div>
-    <div class="footer-rights">
-        www.abhisportfolio.com | All rights reserved
-    </div>
-</footer>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script>
-    var typed = new Typed('#element', {
-        strings: ['Web Developer', 'Web Designer'],
-        typeSpeed: 50,
-    });
-</script>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4HCgxPdSJCXO3vBRURfwJ37+aYZbyWGxODa7z0s9Y" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['Web Developer', 'Web Designer'],
+              typeSpeed: 50,
+            });
+          </script>
 </body>
 </html>
