@@ -1,0 +1,31 @@
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.icon-group {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.icon-link img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.icon-text {
+    font-size: 1.1rem;
+    text-align: left;
+    color: black;
+}
