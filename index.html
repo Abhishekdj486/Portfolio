@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="https://abhishekdj486.github.io/Portfolio/"><img src="images/logo1.jpg" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Abhishek</span></h1>
+                <p>And I'm a Web Designer</p><br>
+                <a href="docs/Resume.pdf"><button class="hollow-button">View Resume</button></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Abhishekdj486"><button class="hollow-button">Visit GitHub</button></a>
+            </div>
+        </div>
+    </div>
+    <!--------------------about----------------------->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>This is a Portfolio Website that describes the projects conducted by Abishek Datta Jagtap during the academic year 2022-2023 while pursuing an MCA degree in Sharnbasva University, Kalaburagi.</p>
+                    <br><hr class="hr">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Java Full Stack Developer</span><br>Full Stack Developer</li>
+                            <li><span>Machine Learning</span><br>Conducted Project on Machine Learning</li>
+                        </ul><hr>
+                    </div><br>
+                    <p class="tab-link active-link">Experience</p>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                        </ul><hr>
+                    </div><br>
+                    <p class="tab-linked active-linked">Education</p>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>ST. Mary PU College (2016-2018)</span><br>PUC Science Result:- 70%</li>
+                            <li><span>Gulbarga University (2018-2021)</span><br>Bacholer Of Science(Computer Science) C.G.P.A:- 7.6</li>
+                            <li><span>Sharnbasva University (2021-2023)</span><br>Master Of Computer Applications C.G.P.A:- 9.01 (3rd Rank Holder Of University)</li>
+                        </ul><hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- Projects ---------->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1><br>
+            <div class="project-list">
+                <div class="project">
+                    <a href="https://abhishekdj486-stock-price-prediction-app-nncxr0.streamlit.app/"><img src="images/stock_price_prediction.png"></a>
+                    <div class="layer"><center><br>
+                        <h3>Stoclk Price Prediction</h3>
+                        <a href="docs/Stock Price Prediction documentation(FINALLL).pdf" class="button-link"><br>
+                            <button class="hollow-button">Documentation</button></center>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <a href="http://abhidj486.pythonanywhere.com/"><img src="images/currency.png"><br></a>
+                    <div class="layer"><center>
+                        <h3>Fake Currency Detection</h3><br>
+                    <a href="docs/Fake Documentation.pdf" class="button-link">
+                        <button class="hollow-button">Documentation</button></center>
+                    </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <a href="http://ciemarksentry.byethost7.com/"><img src="images/developer.png"><br></a>
+                    <div class="layer"><center>
+                        <h3>Continous Internal Evaluation (CIE) Marks Entry</h3>
+                    <a href="docs/CIE entry-1.pdf" class="button-link">
+                        <button class="hollow-button">Documentation</button></center>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------contact--------->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i>abhishekjagtap486@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 6364557716</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/abhioo196?mibextid=qi2Omg"><i class="fab fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=6364557716&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/abhioo196?igsh=NjVwdnJvbjBvcmhh"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abishek-jagtap-2099bb235/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="docs/Resume.pdf" download><button class="hollow-button btn">Download CV</button></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Write here for us"></textarea>
+                        <button type="submit" class="hollow-button btn">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Abhishek. Made by <i class="fas fa-heart"></i> Me</p>
+    </div>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyY-cDKoLtjgOtkMHQ_7M8O4Bxq5LdTqD27ErQOnoy-CfJL5gIXtYUAn0kQdSAszelR/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
